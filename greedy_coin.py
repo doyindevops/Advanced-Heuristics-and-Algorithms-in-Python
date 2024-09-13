@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 """ Greedy Coin Change Algorithm
 1. The function greedy_coin takes one argument, the amount of change to be given to the customer.
 2. The function prints a statement to tell the customer how much change they are getting.
