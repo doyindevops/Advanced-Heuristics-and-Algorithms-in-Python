@@ -1,13 +1,20 @@
 {
-	"customizations": {
-		"vscode": {
-			"extensions": [
-				"ms-python.python",
-				"ms-toolsai.jupyter"
-			]
-		}
-	},
-	"features": {
-		 "ghcr.io/devcontainers/features/nvidia-cuda:1": {}
-	}
+    "build": {
+        "dockerfile": "Dockerfile",  // This references your Dockerfile
+        "args": {
+            "VARIANT": "3.10-bullseye",  // Python version you specified in the Dockerfile
+            "NODE_VERSION": "lts/*"  // Optional, based on your Node.js requirements
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-toolsai.jupyter"
+            ]
+        }
+    },
+    "features": {
+        "ghcr.io/devcontainers/features/nvidia-cuda:1": {}
+    }
 }
